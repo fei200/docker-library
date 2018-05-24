@@ -2,6 +2,20 @@
 
 kubernetes 相关 images 同步
 
+# 2018.5.24
+
+## tensorflow-horovod
+v1.9
+* python: 3.5
+* tensorflow-gpu: 1.6
+* PYTORCH_VERSION: v0.4.0
+* CUDNN_VERSION: 7.0.5.15-1+cuda9.0
+* NCCL_VERSION : 2.2.12-1+cuda9.0
+
+tf-1.6-sklearn: 基于官方Dockerfile，增加了sklearn，[Dockerfile](https://github.com/fei200/docker-library/commit/28ddf9ee354524047739f0e26598b5efc46e1915#diff-55958daa91a1f881a2ebb71245c134c0)
+
+tf-1.6:  基于horovod官方Dockerfile，增加了ssh, [Dockerfile](https://github.com/fei200/docker-library/commit/e12cbd1bfd26ddecd396d7bc69e849fbd345e74f#diff-55958daa91a1f881a2ebb71245c134c0)
+
 # 2018.1.2017
 
 * 新增监控组件heapster v1.5.0
