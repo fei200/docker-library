@@ -94,9 +94,15 @@ RUN apt-get install -y --no-install-recommends subversion && \
     rm -rf /examples/.svn
 
 WORKDIR "/examples"
-RUN echo "root:miao" | chpasswd
-EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
-RUN sed -i '/PermitRootLogin/c\PermitRootLogin yes' /etc/ssh/sshd_config
 
 # David write this file to build tensorflow horovod image
+# RUN echo "root:miao" | chpasswd
+# EXPOSE 22
+# CMD ["/usr/sbin/sshd", "-D"]
+# RUN sed -i '/PermitRootLogin/c\PermitRootLogin yes' /etc/ssh/sshd_config
+
+# Add sklearn
+RUN pip --no-cache-dir install sklearn \
+      && pip --no-cache-dir install scikit-image \
+      && pip --no-cache-dir install pandas
+
