@@ -2,10 +2,15 @@
 
 kubernetes 相关 images 同步
 
+# 2018.6.7
+
+v1.9.0
+k8s dashboard 1.8.3
+
 # 2018.5.24
 
 ## tensorflow-horovod
-v1.9
+v1.9.0
 * python: 3.5
 * tensorflow-gpu: 1.6
 * PYTORCH_VERSION: v0.4.0
