@@ -1,0 +1,1 @@
+FROM gcr.io/heptio-images/velero:v1.0.0
